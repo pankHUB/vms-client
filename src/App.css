@@ -1,0 +1,10 @@
+.main{
+    padding-top: 45px;
+}
+
+@media only screen and (max-width: 600px){
+  .main{
+    padding-top: 45px;
+  }
+  
+}

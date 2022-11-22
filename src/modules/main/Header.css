@@ -1,0 +1,31 @@
+.nav_header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 45px;
+    margin-top: 40px;
+    position: fixed;
+    background-color:rgb(123, 202, 226); 
+}
+
+.item_header {
+    padding:5px;
+    align-items: right;
+}
+
+.item_footer{
+    padding:5px;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .nav_header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+        background-color: hsl(182, 94%, 51%); 
+    }
+}
+
