@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./Footer.css";
 
-const Navbar = () => {
+const Header = () => {
   return (
     <div className="nav_navbar">
       <div className="item">
@@ -18,4 +18,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;
