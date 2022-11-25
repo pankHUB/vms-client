@@ -1,19 +1,19 @@
+import React from 'react';
 import { Routes, Route } from "react-router-dom";
 import { Col, Row } from "reactstrap";
+import Grid from '@mui/material/Unstable_Grid2';
+
+import Home from "./modules/home/Home";
+import Header from './modules/layout/Header';
+import Layout from "./modules/layout/Layout";
+import Voucher from "./modules/voucher/Voucher";
 
 import "./App.css";
-
-import Home from "./modules/body/Home";
-import Details from "./modules/common/Details";
-import Header from "./modules/main/Header";
-import Footer from "./modules/main/Footer";
-import Navbar from "./modules/main/Navbar";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Row style={{ width: "100%" }}>
+      <Layout/>
         <Col>
           <Header />
         </Col>
@@ -21,12 +21,10 @@ function App() {
           <div className="main">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/details" element={<Details />} />
+              <Route path="/voucher" element={<Voucher />} />
             </Routes>
           </div>
         </Col>
-      </Row>
-      <Footer />
     </>
   );
 }
