@@ -6,6 +6,7 @@ const columns = [
   { id: 'vaucherId', label: 'Voucher Id', minWidth: 170 },
   { id: 'type', label: 'Type', minWidth: 100 },
   { id: 'brand', label: 'Brand', minWidth: 100 },
+  { id: 'userId', label: 'userId', minWidth: 100 },
 ];
 
 
@@ -46,7 +47,7 @@ const Dataview = (props) => {
               .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
               .map((row) => {
                 console.log(row);
-                const {type, Brand, vaucherId} = row;
+                const {type, Brand, vaucherId, userId} = row;
                 console.log(`Type: ${type}, Brand: ${Brand}`)
                 return (
                   <TableRow hover role="checkbox" tabIndex={-1} key={vaucherId}>
@@ -58,6 +59,9 @@ const Dataview = (props) => {
                     </TableCell>
                     <TableCell >
                          {Brand}
+                    </TableCell>
+                    <TableCell >
+                         {userId}
                     </TableCell>
                   </TableRow>
                 );
